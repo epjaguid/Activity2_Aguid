@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #F3E9D2; /* Light Beige */
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row; /* Arrange boxes horizontally */
+            margin: 20px; /* Add margin on each side */
+        }
+
+        .box_One {
+            background-color: #FCFBF4; /* Light Green */
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            margin-right: 20px; /* Add margin between box_One and box_Two */
+        }
+
+        .box-container {
+            display: flex;
+            flex-direction: column; /* Arrange boxes vertically */
+            flex: 1; /* Allow box-container to grow */
+        }
+
+        .box_Two,
+        .box_Three {
+            background-color: #FCFBF4 ; 
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            margin-bottom: 20px; /* Add margin between box_Two and box_Three */
+        }
+
+        .box_Two i,
+        .box_Three i {
+            color: #C4A484 !important; /* Light Red */
+        }
+
+        .box_Two .w3-text-teal,
+        .box_Three .w3-text-teal {
+            color: #C4A484 !important; /* Light Red */
+        }
+
+        footer {
+            background-color: #C4A484; /* Light Red */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            position:flex;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .w3-text-grey {
+            color: #C4A484; /* Light Red */
+        }
+
+        .current-year {
+            color: #C4A484; /* Light Red */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="box_One">
+            <img src="myprof.jpg" alt="Profile Image" class="w3-image" style="width:300px">
+            <h3 class="w3-center">ETHYL PRINCES JOY T. AGUID</h3>
+            <p class="w3-center"><em>College Student</em></p>
+
+        </div>
+        
+        <!-- Container for box_Two and box_Three -->
+        <div class="box-container">
+            <!-- Work Experience Section -->
+            <div class="box_Two">
+                <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h3>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-text-grey">Jan 2015 - </span><span class="w3-tag w3-brown w3-round">Current</span></h6>
+                    <p>Some text..</p>
+                    <hr>
+                </div>
+            </div>
+    
+            <!-- Education Section -->
+            <div class="box_Three">
+                <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h3>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>University Of Science and Technology of Southern Philippines-CDO Campus</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-text-grey">2022-Present</span></h6>
+                    <p>Some text..</p>
+                    <hr>
+                    <h5 class="w3-opacity"><b>Misamis Oriental General Comprehensive Highschool(Senior Highschool)</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-text-grey">2020 - 2022</span></h6>
+                    <p>Some text..</p>
+                    <hr>
+                    <h5 class="w3-opacity"><b>Sisters Of Mary School-Girlstown Inc.,</b></h5>
+                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-text-grey current-year">2016 - 2020</span></h6>
+                    <p>Studied in an all-girls dormitory school and was able to take the TechVoc CSS(Computer System and Services) for two quarters of Grade 9.
+                    </p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <a href="https://www.facebook.com/ethylprincesjoy.aguid" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
+        <a href="mailto:aguid.ethyl110@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+    </footer>
+</body>
+</html>
