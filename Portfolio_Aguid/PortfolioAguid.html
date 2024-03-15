@@ -16,28 +16,37 @@
 
         .container {
             display: flex;
-            flex-direction: row; /* Arrange boxes horizontally */
-            margin: 20px; /* Add margin on each side */
+            flex-direction: row; 
+            margin: 20px; 
         }
 
         .box_One {
-            background-color: #FCFBF4; /* Light Green */
+            background-color: #FCFBF4; 
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
             padding: 35px;
-            margin-right: 20px; /* Add margin between box_One and box_Two */
+            margin-right: 10px; 
           
         }
+        .centered-text{text-align: center;}
         
 
-        .box_One .statement {
-            margin-top: 20px;
+        .box_One .statement {text-align: left;
+                            margin-top: 20px;
+                            color: rgb(114, 113, 113);
+                            opacity: 100%;
         }
+        .iconimage{display: inline-block;
+              margin-left: 40px;
+              margin-top: 10px;}
+        .skills{margin-top: 10px;}
+        .mytext{color:grey}
+        .mytext{color:grey}
 
         .box-container {
             display: flex;
-            flex-direction: column; /* Arrange boxes vertically */
-            flex: 2; /* Allow box-container to grow */
+            flex-direction: column;
+            flex: 1; 
         }
 
         .box_Two,
@@ -49,18 +58,16 @@
             margin-bottom: 20px; /* Add margin between box_Two and box_Three */
         }
 
+        .box_One.mytext,
         .box_Two i,
         .box_Three i {
-            color: #C4A484 !important; /* Light Red */
+            color: #C4A484 !important; 
         }
-
-        .box_Two .w3-text-teal,
-        .box_Three .w3-text-teal {
-            color: #C4A484 !important; /* Light Red */
-        }
+          
+        
 
         footer {
-            background-color: #C4A484; /* Light Red */
+            background-color: #C4A484; 
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -76,25 +83,36 @@
             margin-right: 10px;
         }
 
-        .w3-text-grey {
-            color: #C4A484; /* Light Red */
-        }
 
-        .current-year {
-            color: #C4A484; /* Light Red */
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <!-- Profile Section -->
         <div class="box_One">
-            <img src="myprof.jpg" alt="Profile Image" class="w3-image" style="width:300px" >
-            <h3 class="w3-center">ETHYL PRINCES JOY T. AGUID</h3>
-            <p class="w3-center"><em>College Student</em></p>
+            <img src="myprof.jpg" alt="Profile Image" class="myimage" width=450px height=300px >
+            <h3 class="centered-text">ETHYL PRINCES JOY T. AGUID</h3>
+            <p class="centered-text"><em>College Student</em></p>
+            <hr>
             <div class="statement">
-                <p>A sophomore of Bachelor of Science in Information Technology.<br> An aspiring Social Media Manager(SMM), General Virtual Assistant,<br> 
-                    graphic designer, and video editor. She is passionate about making<br> designs and building or creating images in social media.</p>
+                <p>A sophomore of Bachelor of Science in Information Technology.An aspiring<br> Social Media Manager(SMM), General Virtual Assistant,
+                graphic designer,<br> and video editor. She is passionate about making designs and building or<br> creating images in social media.
+                   Thus, helping businesses create image<br> and market their business on social media. </p>
+            </div>
+            <div class="icons">
+                <p3 class="mytext" ><b>PROFICIENT IN THE FOLLOWING APPS:</b></p3><br>
+                <img src="adobe-photoshop.png" width="50px" height="50px" class="iconimage">
+                <img src="capcut.jpg" width="50px" height="50px" class="iconimage">
+                <img src="Canva Logo.jpg" width="50px" height="50px" class="iconimage">
+                <img src="gmail.jpg" width="50px" height="35px" class="iconimage"></div>
+            <div class="skills">
+                <p3 class="mytext"><b>Other Skills:</b></p3>
+                <li  class="mytext">Proficient in Calendar Management</li>
+                <li  class="mytext">Proficient in Email Management</li>
+                <li  class="mytext">Proficient in Excel/Google Spreadsheet</li>
+                <li  class="mytext">Detail-Oriented</li>
+                <li  class="mytext">Leadership Skills</li>
+                <li  class="mytext">Basic Copywriting</li>
             </div>
         </div>
         
@@ -102,29 +120,29 @@
         <div class="box-container">
             <!-- Work Experience Section -->
             <div class="box_Two">
-                <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h3>
+                <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge mytext"></i>Work Experience</h3>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-text-grey">Jan 2015 - </span><span class="w3-tag w3-brown w3-round">Current</span></h6>
-                    <p>Some text..</p>
+                    <h5 class="w3-opacity"><b>Service Crew(Cashier & Server)</b></h5>
+                    <h6 class="mytext"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span>Jan 2022- </span><span>Oct 2022</span></h6>
+                    <p>As a Cashier and Server I am responsible to taking customers orders </p>
                     <hr>
                 </div>
             </div>
     
             <!-- Education Section -->
             <div class="box_Three">
-                <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h3>
+                <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge mytext"></i>Education</h3>
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>University Of Science and Technology of Southern Philippines-CDO Campus</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-text-grey">2022-Present</span></h6>
+                    <h6 class="mytext"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span >2022-Present</span></h6>
                     <p>Some text..</p>
                     <hr>
                     <h5 class="w3-opacity"><b>Misamis Oriental General Comprehensive Highschool(Senior Highschool)</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-text-grey">2020 - 2022</span></h6>
+                    <h6 class="mytext"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span>2020 - 2022</span></h6>
                     <p>Some text..</p>
                     <hr>
                     <h5 class="w3-opacity"><b>Sisters Of Mary School-Girlstown Inc.,</b></h5>
-                    <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span class="w3-text-grey current-year">2016 - 2020</span></h6>
+                    <h6 class="mytext"><i class="fa fa-calendar fa-fw w3-margin-right"></i><span>2016 - 2020</span></h6>
                     <p>Studied in an all-girls dormitory school and was able to take the TechVoc CSS(Computer System and Services) for two quarters of Grade 9.
                     </p>
                     <hr>
